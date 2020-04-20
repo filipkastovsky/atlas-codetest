@@ -1,11 +1,15 @@
 import React from 'react';
-import { Router, Switch, Route } from 'react-router';
+import { Route, Router, Switch } from 'react-router-dom';
+
 import { history } from './utils/history';
+import { Dashboard } from '../pages/Dashboard/Dashboard';
+import { NotFound } from '../pages/NotFound';
 
 export const AppRouter = () => (
     <Router {...{ history }}>
         <Switch>
-            <Route component={() => <div />} />
+            <Route exact path={'/'} component={Dashboard} />
+            <Route component={NotFound} />
         </Switch>
     </Router>
 );
