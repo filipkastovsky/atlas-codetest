@@ -35,7 +35,7 @@
         "@types/styled-components": "^5.1.0",
         "apollo": "^2.27.0",
         "prettier": "^1.19.1",
-        "react-scripts": "^3.4.1",
+        "react-scripts": "^5.0.1",
         "typescript": "^3.8.3"
     },
     "eslintConfig": {
